@@ -1,7 +1,7 @@
 # Microsoft Agent Framework teaching demos
 
-> Le code est documenté en anglais mais le cours sera disponible gratuitement en français aussi
-> The code is documented in English, but the course will also be available for free in French
+> Le code est documenté en anglais ; le cours sera consultable gratuitement en français et en anglais.
+> The code is documented in English; the course will be freely available in French and English.
 
 Version **V100** is the first published technical base. See the [release notes](docs/ReleaseNotes.md) for its scope, validation and limits. The [GitHub repository](https://github.com/odahan/MAF-Course-Code) contains this source tree at its root.
 
@@ -54,8 +54,21 @@ Ollama is the default local provider. Live examples require the configured model
 - `shared`: common libraries, training code, configuration and assets required by the projects.
 - `tests`: the 13 automated test suites referenced by the solution.
 - `exercises`: teaching exercises and the Actionability projects.
-- `docs`: the catalogue, course map, useful technical guides, provenance and upstream licence notices.
+- `docs`: the catalogue, course map, useful technical guides, provenance and license-scope notices.
 
 Historical reports, renovation scripts, old nested solutions, filming notes, distribution archives, reference supports and local caches are retained in the author's local `ReserveBaseTechnique` directory and are not published here. They are not needed to compile or run the demos. Older script recipes mentioned in technical guides are historical references. Use the direct build/test commands above for the current source tree.
 
-Read [provenance](docs/Provenance.md), [upstream licences](docs/licenses/LICENCE.EN.MD) and [AVIS-LEGAL.txt](AVIS-LEGAL.txt). Original course trees and archives remain preserved.
+## License
+
+Copyright (c) 2026 Olivier Dahan. The author-owned code, fixtures, build files
+and accompanying technical documentation in this repository are available under
+the [MIT License](LICENSE). See the [license scope](docs/licenses/LICENCE.EN.MD)
+and [rights notice](AVIS-LEGAL.txt).
+
+The course website, separate course scripts, slides, illustrations, logos and
+videos have separate rights and are outside this MIT grant. Dependencies,
+frameworks, models and services retain their own licenses and terms; see
+[third-party notices](THIRD-PARTY-NOTICES.md).
+
+Read [provenance](docs/Provenance.md) for the source history. Original course trees
+and archives remain preserved.

@@ -26,4 +26,24 @@ Historical acceptance campaigns and migration reports remain in the author's loc
 
 Passing application tests does not qualify a model. The default granite4:3b candidate/judge profile remains unqualified. Graphical Web/WPF acceptance, independent domain-reference sign-off and production qualification remain unperformed. Live providers and models require explicit configuration and separate evaluation; cloud usage can incur provider charges.
 
-Publication does not change usage rights. Read [AVIS-LEGAL.txt](../AVIS-LEGAL.txt) and the preserved [upstream licence notices](licenses/LICENCE.EN.MD). No open-source licence is granted by this release.
+The original V100 release was published with private educational-use notices.
+The subsequent MIT licensing update described below supersedes those restrictions
+for author-owned files in the current tree; it does not alter the historical tag.
+
+## MIT licensing update — 24 October 2026
+
+The author-owned code, fixtures, build files and accompanying technical
+documentation are now distributed under the [MIT License](../LICENSE).
+[AVIS-LEGAL.txt](../AVIS-LEGAL.txt) and both license-scope documents under
+`docs/licenses` have been aligned with this grant. The former notices remain
+preserved outside this repository in the author's original trees and archives.
+
+The course website, separate course scripts, slides, illustrations, logos and
+videos retain their separate rights. Third-party dependencies retain their own
+terms; see [third-party notices](../THIRD-PARTY-NOTICES.md).
+
+This update changes licensing and documentation only. It does not change
+application source, project files, package versions or runtime behavior. The
+validation results above describe the earlier technical reconstruction; no new
+.NET build, test campaign, model evaluation or deployment is implied by this
+documentation update.
