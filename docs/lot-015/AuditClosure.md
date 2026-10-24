@@ -1,0 +1,33 @@
+# Final audit disposition
+
+This matrix supersedes planned-only statements in the Lot-001 selection for the current distribution. Earlier receipts remain dated observations. Addressed means the selected teaching behavior has code and evidence; it does not mean production certification. Deferred source/media edits are explicit justified scope decisions from the validated renovation plan.
+
+| Findings | Current projects / change | Evidence and disposition |
+|---|---|---|
+| C01–C05 | Maf.Memory; StatePersistence and SharedMemory examples | Lot-006 (unpublished local archive); actual SQLite restart, coordinated clear/forget, bounded corrected user facts, stale update rejection. Addressed for selected labs. |
+| C06–C09 | Maf.Rag; SqliteIngest / RagAgent / provider | Lot-007 (unpublished local archive); governed corpus, real dense SQLite cosine, manifest mismatch rejection, atomic rebuild, citations checked by host. Qdrant invariants replaced by the approved SQLite design. |
+| C10–C11 | Maf.Backlog; StructuredDraft / PipelineComplete | Lot-005 (unpublished local archive); shared validated contract at analysis, approval and persistence boundaries. Addressed. |
+| C12 | Maf.Workflows / Video2; JSON plans retained as comparison | Lot-008 (unpublished local archive); actual native graph with typed branches and native agent. JSON plans are not claimed as graph execution. |
+| C13 | Maf.Durable / Video3 and DocumentedApproval | Lot-009 (unpublished local archive); replay, conflicting decision, concurrent duplicate and post-commit failure. [Final scenario](Scenario.md) binds evidence to the approved draft. |
+| C14 | Maf.Control / BoundedHarness / resilience demos | Lot-010 (unpublished local archive); actual loops, host permissions, budgets and propagated cancellation. |
+| C15–C17 | Maf.Observability / Lab07 / EP008, EP015, EP016 | Lot-013 (unpublished local archive); safe correlated native/HTTP spans, reopened journal, nullable usage, measured auxiliary requests. Costs/estimates remain separate. |
+| C18 | Shared asset/config paths; caller-owned state directories | Prior path-independent runs in Lots 005–013; final acceptance launches new processes from the system temp directory. Distribution is also built after extraction to a fresh path. Historical absolute paths in provenance are intentionally retained. |
+| C19 | Controlled backlog and memory hosts | [Contract guide](../lot-005/ContractsAndTools.md), [memory guide](../lot-006/SessionsAndMemory.md); no destructive startup reset, lifecycle commands documented by store. Old reset exercises retired explicitly. |
+| C20 | Memory examples and EOF handling | Lot-006 (unpublished local archive); failures visible, EOF exits; Lot-007 (unpublished local archive) includes EOF process receipts for all selected RAG entries. |
+| C21 | Current exercise indexes and Actionability Start/End | [Exercise registry](Exercises.md) assigns every historical exercise to replacement, guided manipulation or retirement. Both selected pair projects build; final receipt checks distinct expected exits and End output. Older exercises are not advertised as unfinished current code. |
+| V01–V02, V04, V07 | global.json, central packages, lock files, canonical solution and Build.ps1 | Baseline (unpublished local archive), Verify-Baseline.ps1, source package manifest and extracted build. Pinned SDK/package policy; offline restore is explicit and has no online audit claim. |
+| V03 | Native MAF approval loop and durable request response | Lot-005 (unpublished local archive), Lot-009 (unpublished local archive); exact observed request/session/proposal checks. |
+| V05 | Independent common embedding generator / Maf.Rag | Lots 003 (unpublished local archive) and 007 (unpublished local archive); embeddinggemma rebuild and embedding manifest. |
+| V06 | Dated provider capability and evaluation results | Lot-004 (unpublished local archive), Lot-014 (unpublished local archive). Default candidate/judge rejected; successful transport examples do not override calibration failures. |
+| A01–A02 | Video2 / Video3 native workflows and durable checkpoints | Lot-008 (unpublished local archive), Lot-009 (unpublished local archive). Addressed. |
+| A03, A05 | Native Harness and execution/tool controls | Lot-010 (unpublished local archive). Addressed for selected cases. |
+| A04, A06 | Video5 streaming and Video4 local MCP | Lot-011 (unpublished local archive), Lot-012 (unpublished local archive). Transport and client logic verified; interactive GUI receipt remains outstanding. |
+| A07 | History, facts, window/summary and native compaction | Lot-006 (unpublished local archive), Lot-013 (unpublished local archive). Actual loss/overhead remains visible. |
+| A08 | Application regressions and isolated EP017 evaluation | Lot-014 (unpublished local archive), [regression map](../lot-014/Regressions.md). Mechanism delivered; default model/judge qualification failed and independent human sign-off absent. |
+| A09 | Extension map and backend/UI reference architecture | [Extensions.md](Extensions.md), [streaming guide](../lot-012/Streaming.md). Skills, remote agents and additional orchestration styles are perspectives, not implemented claims. |
+| D01 | Explicit local guarantees; integrated documented approval; EP018 review-only entry | [Guide.md](Guide.md), [Scenario.md](Scenario.md). No general industrialization promise. Historical landing/support rewrite deferred to later editorial work, as required by the validated plan. |
+| D02 | Conceptual distinctions consolidated in the global guide | Agent output versus host execution; context/tool/provider retrieval; typed versus valid; approval versus accuracy; SQLite versus SQL Server; history versus facts versus invocation arguments. Addressed in current instructions. |
+| D03 | P00–P15 prerequisite path with no imposed timetable | [Guide.md](Guide.md). Historical overlapping two-day schedules preserved, excluded from current instructions. A future course schedule is an editorial decision. |
+| D04 | Current entry points, names and link checks | Current docs use actual SqliteIngest/provider names and canonical solution. Historical slide spelling/numbering and extraction artefacts are not silently edited; visual support review is deferred with the support rewrite. |
+
+Final reservation: this is an accepted technical teaching distribution with documented limits, not a qualified production system. GUI interaction, broad model quality, independent reference review and operational deployment remain outside the claims. Original films, upstream repositories, old archives and reference supports remain preserved.

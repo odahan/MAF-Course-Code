@@ -1,0 +1,246 @@
+<Solution>
+  <Folder Name="/Documentation/">
+    <File Path="README.md" />
+    <File Path="docs/DemoCatalog.md" />
+    <File Path="docs/CourseMap.md" />
+    <File Path="docs/Provenance.md" />
+  </Folder>
+  <Folder Name="/Demos/" />
+  <Folder Name="/Demos/00-ConfigurateurDemo/">
+    <File Path="demos/00-ConfigurateurDemo/README.md" />
+    <Project Path="demos/00-ConfigurateurDemo/00-ConfigurateurDemo.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo010_CodeOrAgent/">
+    <File Path="demos/Demo010_CodeOrAgent/README.md" />
+    <Project Path="demos/Demo010_CodeOrAgent/Demo010.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo020_ConnectionProfiles/">
+    <File Path="demos/Demo020_ConnectionProfiles/README.md" />
+    <Project Path="demos/Demo020_ConnectionProfiles/Console/Demo020.Console.csproj" />
+    <Project Path="demos/Demo020_ConnectionProfiles/Backend/Demo020.Backend.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo030_AgentCapabilities/">
+    <File Path="demos/Demo030_AgentCapabilities/README.md" />
+    <Project Path="demos/Demo030_AgentCapabilities/Demo030.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo040_FirstAgent/">
+    <File Path="demos/Demo040_FirstAgent/README.md" />
+    <Project Path="demos/Demo040_FirstAgent/Demo040.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo050_StructuredBusinessContract/">
+    <File Path="demos/Demo050_StructuredBusinessContract/README.md" />
+    <Project Path="demos/Demo050_StructuredBusinessContract/Demo050.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo060_ToolsCatalog/">
+    <File Path="demos/Demo060_ToolsCatalog/README.md" />
+    <Project Path="demos/Demo060_ToolsCatalog/Demo060.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo070_SqliteBacklog/">
+    <File Path="demos/Demo070_SqliteBacklog/README.md" />
+    <Project Path="demos/Demo070_SqliteBacklog/Demo070.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo080_ApprovedBacklog/">
+    <File Path="demos/Demo080_ApprovedBacklog/README.md" />
+    <Project Path="demos/Demo080_ApprovedBacklog/Demo080.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo090_CompletePipeline/">
+    <File Path="demos/Demo090_CompletePipeline/README.md" />
+    <Project Path="demos/Demo090_CompletePipeline/Demo090.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo100_ControlledAction/">
+    <File Path="demos/Demo100_ControlledAction/README.md" />
+    <Project Path="demos/Demo100_ControlledAction/Demo100.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo110_ToolReliability/">
+    <File Path="demos/Demo110_ToolReliability/README.md" />
+    <Project Path="demos/Demo110_ToolReliability/Demo110.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo120_ToolHallucination/">
+    <File Path="demos/Demo120_ToolHallucination/README.md" />
+    <Project Path="demos/Demo120_ToolHallucination/Demo120.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo130_SessionPersistence/">
+    <File Path="demos/Demo130_SessionPersistence/README.md" />
+    <Project Path="demos/Demo130_SessionPersistence/Demo130.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo140_NativeSession/">
+    <File Path="demos/Demo140_NativeSession/README.md" />
+    <Project Path="demos/Demo140_NativeSession/Demo140.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo150_SharedFacts/">
+    <File Path="demos/Demo150_SharedFacts/README.md" />
+    <Project Path="demos/Demo150_SharedFacts/Demo150.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo160_ContextMemory/">
+    <File Path="demos/Demo160_ContextMemory/README.md" />
+    <Project Path="demos/Demo160_ContextMemory/Demo160.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo170_MemoryDrift/">
+    <File Path="demos/Demo170_MemoryDrift/README.md" />
+    <Project Path="demos/Demo170_MemoryDrift/Demo170.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo180_VectorIngestion/">
+    <File Path="demos/Demo180_VectorIngestion/README.md" />
+    <Project Path="demos/Demo180_VectorIngestion/Demo180.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo190_RetrievedEvidence/">
+    <File Path="demos/Demo190_RetrievedEvidence/README.md" />
+    <Project Path="demos/Demo190_RetrievedEvidence/Demo190.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo200_RetrievalProvider/">
+    <File Path="demos/Demo200_RetrievalProvider/README.md" />
+    <Project Path="demos/Demo200_RetrievalProvider/Demo200.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo210_CorpusQuality/">
+    <File Path="demos/Demo210_CorpusQuality/README.md" />
+    <Project Path="demos/Demo210_CorpusQuality/Demo210.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo220_BusinessRetrieval/">
+    <File Path="demos/Demo220_BusinessRetrieval/README.md" />
+    <Project Path="demos/Demo220_BusinessRetrieval/Demo220.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo230_TypedWorkflow/">
+    <File Path="demos/Demo230_TypedWorkflow/README.md" />
+    <Project Path="demos/Demo230_TypedWorkflow/Demo230.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo240_AgentWorkflow/">
+    <File Path="demos/Demo240_AgentWorkflow/README.md" />
+    <Project Path="demos/Demo240_AgentWorkflow/Demo240.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo250_WorkflowEvents/">
+    <File Path="demos/Demo250_WorkflowEvents/README.md" />
+    <Project Path="demos/Demo250_WorkflowEvents/Demo250.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo260_MultiAgentRoles/">
+    <File Path="demos/Demo260_MultiAgentRoles/README.md" />
+    <Project Path="demos/Demo260_MultiAgentRoles/Demo260.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo270_Planning/">
+    <File Path="demos/Demo270_Planning/README.md" />
+    <Project Path="demos/Demo270_Planning/Demo270.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo280_ValidatedPlanning/">
+    <File Path="demos/Demo280_ValidatedPlanning/README.md" />
+    <Project Path="demos/Demo280_ValidatedPlanning/Demo280.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo290_FormattedPlanning/">
+    <File Path="demos/Demo290_FormattedPlanning/README.md" />
+    <Project Path="demos/Demo290_FormattedPlanning/Demo290.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo300_ExternalRequest/">
+    <File Path="demos/Demo300_ExternalRequest/README.md" />
+    <Project Path="demos/Demo300_ExternalRequest/Demo300.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo310_CheckpointResume/">
+    <File Path="demos/Demo310_CheckpointResume/README.md" />
+    <Project Path="demos/Demo310_CheckpointResume/Demo310.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo320_DurableApproval/">
+    <File Path="demos/Demo320_DurableApproval/README.md" />
+    <Project Path="demos/Demo320_DurableApproval/Demo320.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo330_BoundedHarness/">
+    <File Path="demos/Demo330_BoundedHarness/README.md" />
+    <Project Path="demos/Demo330_BoundedHarness/Demo330.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo340_LoopControl/">
+    <File Path="demos/Demo340_LoopControl/README.md" />
+    <Project Path="demos/Demo340_LoopControl/Demo340.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo350_GracefulDegradation/">
+    <File Path="demos/Demo350_GracefulDegradation/README.md" />
+    <Project Path="demos/Demo350_GracefulDegradation/Demo350.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo360_PromptInjection/">
+    <File Path="demos/Demo360_PromptInjection/README.md" />
+    <Project Path="demos/Demo360_PromptInjection/Demo360.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo370_LayeredProtection/">
+    <File Path="demos/Demo370_LayeredProtection/README.md" />
+    <Project Path="demos/Demo370_LayeredProtection/Demo370.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo380_RoleBasedTools/">
+    <File Path="demos/Demo380_RoleBasedTools/README.md" />
+    <Project Path="demos/Demo380_RoleBasedTools/Demo380.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo390_PromptProfiles/">
+    <File Path="demos/Demo390_PromptProfiles/README.md" />
+    <Project Path="demos/Demo390_PromptProfiles/Demo390.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo400_LocalMcp/">
+    <File Path="demos/Demo400_LocalMcp/README.md" />
+    <Project Path="demos/Demo400_LocalMcp/Server/Demo400.Server.csproj" />
+    <Project Path="demos/Demo400_LocalMcp/Client/Demo400.Client.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo410_StreamingInterfaces/">
+    <File Path="demos/Demo410_StreamingInterfaces/README.md" />
+    <Project Path="demos/Demo410_StreamingInterfaces/Backend/Demo410.Backend.csproj" />
+    <Project Path="demos/Demo410_StreamingInterfaces/Client/Demo410.Client.csproj" />
+    <Project Path="demos/Demo410_StreamingInterfaces/Console/Demo410.Console.csproj" />
+    <Project Path="demos/Demo410_StreamingInterfaces/Web/Demo410.Web.csproj" />
+    <Project Path="demos/Demo410_StreamingInterfaces/Wpf/Demo410.Wpf.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo420_SafeTelemetry/">
+    <File Path="demos/Demo420_SafeTelemetry/README.md" />
+    <Project Path="demos/Demo420_SafeTelemetry/Demo420.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo430_BusinessAudit/">
+    <File Path="demos/Demo430_BusinessAudit/README.md" />
+    <Project Path="demos/Demo430_BusinessAudit/Demo430.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo440_ContextBudget/">
+    <File Path="demos/Demo440_ContextBudget/README.md" />
+    <Project Path="demos/Demo440_ContextBudget/Demo440.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo450_ContractRegression/">
+    <File Path="demos/Demo450_ContractRegression/README.md" />
+    <Project Path="demos/Demo450_ContractRegression/Demo450.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo460_CandidateEvaluation/">
+    <File Path="demos/Demo460_CandidateEvaluation/README.md" />
+    <Project Path="demos/Demo460_CandidateEvaluation/Demo460.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo470_DocumentedApproval/">
+    <File Path="demos/Demo470_DocumentedApproval/README.md" />
+    <Project Path="demos/Demo470_DocumentedApproval/Demo470.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo480_ModelRouting/">
+    <File Path="demos/Demo480_ModelRouting/README.md" />
+    <Project Path="demos/Demo480_ModelRouting/Demo480.App.csproj" />
+  </Folder>
+  <Folder Name="/Demos/Demo490_ProductionReview/">
+    <File Path="demos/Demo490_ProductionReview/README.md" />
+    <Project Path="demos/Demo490_ProductionReview/Demo490.App.csproj" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <File Path="shared/Training/TrainingConfig.cs" />
+    <Project Path="shared/Maf.Backlog/Maf.Backlog.csproj" />
+    <Project Path="shared/Maf.Control/Maf.Control.csproj" />
+    <Project Path="shared/Maf.DemoConnection/Maf.DemoConnection.csproj" />
+    <Project Path="shared/Maf.Durable/Maf.Durable.csproj" />
+    <Project Path="shared/Maf.Memory/Maf.Memory.csproj" />
+    <Project Path="shared/Maf.Observability/Maf.Observability.csproj" />
+    <Project Path="shared/Maf.Rag/Maf.Rag.csproj" />
+    <Project Path="shared/Maf.Workflows/Maf.Workflows.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="tests/AgentCiCd.Tests/AgentCiCd.Tests.csproj" />
+    <Project Path="tests/Episode17Demo.Tests/Episode17Demo.Tests.csproj" />
+    <Project Path="tests/AgentCapabilities.Tests/AgentCapabilities.Tests.csproj" />
+    <Project Path="tests/Maf.Backlog.Tests/Maf.Backlog.Tests.csproj" />
+    <Project Path="tests/Maf.Control.Tests/Maf.Control.Tests.csproj" />
+    <Project Path="tests/Maf.DemoConnection.Tests/Maf.DemoConnection.Tests.csproj" />
+    <Project Path="tests/Maf.Durable.Tests/Maf.Durable.Tests.csproj" />
+    <Project Path="tests/Maf.Memory.Tests/Maf.Memory.Tests.csproj" />
+    <Project Path="tests/Maf.Observability.Tests/Maf.Observability.Tests.csproj" />
+    <Project Path="tests/Maf.Rag.Tests/Maf.Rag.Tests.csproj" />
+    <Project Path="tests/Maf.Workflows.Tests/Maf.Workflows.Tests.csproj" />
+    <Project Path="tests/LocalMcp.Tests/LocalMcp.Tests.csproj" />
+    <Project Path="tests/Streaming.Tests/Streaming.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Exercises/">
+    <Project Path="exercises/Actionability/End/Actionability.End.csproj" />
+    <Project Path="exercises/Actionability/Start/Actionability.Start.csproj" />
+  </Folder>
+</Solution>
+

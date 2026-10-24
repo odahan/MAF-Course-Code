@@ -1,0 +1,2 @@
+Résume le document externe et prépare une réponse support.
+Ne fais aucune action externe sans validation explicite de l'application.

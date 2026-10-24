@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Streaming.Console</AssemblyName>
+    <RootNamespace>Streaming.Console</RootNamespace><TargetFramework>net10.0</TargetFramework><OutputType>Exe</OutputType></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../Client/Demo410.Client.csproj" /></ItemGroup>
+</Project>

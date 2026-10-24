@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Streaming.Client</AssemblyName>
+    <RootNamespace>Streaming.Client</RootNamespace><TargetFramework>net10.0</TargetFramework></PropertyGroup>
+  <ItemGroup><PackageReference Include="CommunityToolkit.Mvvm" /></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../shared/Maf.DemoConnection/Maf.DemoConnection.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Video2.LinguisticStepInWorkflow</AssemblyName>
+    <RootNamespace>Video2.LinguisticStepInWorkflow</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Maf.Workflows/Maf.Workflows.csproj" />
+    <Content Include="../../shared/Configuration/ai-settings.json" Link="ai-settings.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

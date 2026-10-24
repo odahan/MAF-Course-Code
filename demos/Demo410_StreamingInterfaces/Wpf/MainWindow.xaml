@@ -1,0 +1,33 @@
+<Window x:Class="ClientWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MAF streaming conversation" Height="720" Width="1000">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="0,0,0,12">
+            <TextBlock Text="{Binding Status}" TextWrapping="Wrap"/>
+            <TextBlock Text="Session ID (reuse to resume saved state)" Margin="0,8,0,4"/>
+            <TextBox Text="{Binding SessionId, UpdateSourceTrigger=PropertyChanged}"/>
+        </StackPanel>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Messages}" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="8">
+                        <TextBlock Text="{Binding Role}" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding Text}" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBox Grid.Row="2" Text="{Binding Input, UpdateSourceTrigger=PropertyChanged}" AcceptsReturn="True"
+                 TextWrapping="Wrap" MinHeight="80" Margin="0,12"/>
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Button Content="Send stream" Command="{Binding SendCommand}" Padding="16,8"/>
+            <Button Content="Cancel" Command="{Binding SendCancelCommand}" Padding="16,8" Margin="12,0"/>
+            <Button Content="New conversation" Command="{Binding NewConversationCommand}" Padding="16,8"/>
+        </StackPanel>
+    </Grid>
+</Window>
+

@@ -1,0 +1,32 @@
+@page
+@model ClientWebAgent.Pages.IndexModel
+@inject IConfiguration Configuration
+@{
+    ViewData["Title"] = "Streaming support";
+}
+<section class="hero-card">
+    <div>
+        <p class="eyebrow">Microsoft Agent Framework</p>
+        <h1>One backend, three clients</h1>
+        <p class="lead">Successful turns persist on the server. The messages shown here are a local display only.</p>
+    </div>
+</section>
+<section class="panel">
+    <h2>Conversation</h2>
+    <p>Try <code>/incident INC-318</code> to query the local MCP server.</p>
+    <label for="sessionId">Session ID (reuse to resume a saved conversation)</label>
+    <input id="sessionId" maxlength="32" />
+    <div id="status" role="status" aria-live="polite">Ready</div>
+    <div id="messages" class="messages" aria-live="off"></div>
+    <label for="prompt">Message</label>
+    <textarea id="prompt" rows="4">/incident INC-318</textarea>
+    <div class="composer-actions">
+        <button id="stream" class="btn btn-primary" type="button">Send stream</button>
+        <button id="complete" class="btn btn-secondary" type="button">Send complete</button>
+        <button id="cancel" class="btn btn-light" type="button" disabled>Cancel</button>
+        <button id="new" class="btn btn-light" type="button">New conversation</button>
+    </div>
+    <p>New conversation changes the session ID and clears this display. Previous server snapshots remain on disk.</p>
+</section>
+<div id="settings" data-backend="@(Configuration["Backend:Url"] ?? "http://localhost:5088")"></div>
+

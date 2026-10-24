@@ -1,0 +1,19 @@
+{
+  "AI": {
+    "ChatProvider": "Ollama",
+    "LocalChat": { "Endpoint": "http://localhost:11434/", "Model": "granite4:3b" },
+    "ApiChat": {
+      "Endpoint": "https://api.openai.com/v1/",
+      "Model": "",
+      "ApiKeyEnvironmentVariable": "MAF_API_KEY"
+    },
+    "EmbeddingProvider": "Ollama",
+    "Embeddings": {
+      "Endpoint": "http://localhost:11434/",
+      "Model": "embeddinggemma:300m",
+      "ApiKeyEnvironmentVariable": "MAF_EMBEDDING_API_KEY"
+    },
+    "TimeoutSeconds": 120,
+    "EmbeddingDimensions": null
+  }
+}

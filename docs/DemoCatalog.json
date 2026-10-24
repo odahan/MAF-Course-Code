@@ -1,0 +1,1781 @@
+{
+  "schemaVersion": 1,
+  "identityPolicy": "Identifiers are stable after Lot-016 reception; retired identifiers are never reused.",
+  "demos": [
+    {
+      "id": "Demo010",
+      "title": "Code Or Agent",
+      "objective": "Compare deterministic routing, C# orchestration and optional open-ended reasoning.",
+      "initialOrder": 1,
+      "courseStep": "P00",
+      "prerequisites": [],
+      "folder": "demos/Demo010_CodeOrAgent",
+      "origins": [
+        "src/jeudis/AgentOuSimpleCode.Episode02"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo010_CodeOrAgent/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo010_CodeOrAgent/Demo010.App.csproj",
+          "role": "App",
+          "assemblyName": "AgentOuSimpleCode.Episode02"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo020",
+      "title": "Connection Profiles",
+      "objective": "Select and diagnose independent chat and embedding connections, from console or HTTP.",
+      "initialOrder": 2,
+      "courseStep": "P01",
+      "prerequisites": [
+        "Demo010"
+      ],
+      "folder": "demos/Demo020_ConnectionProfiles",
+      "origins": [
+        "src/connection/Connection.Console",
+        "src/connection/Connection.Backend"
+      ],
+      "guide": "docs/lot-003/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Test-ConnectionLocal.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo020_ConnectionProfiles/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo020_ConnectionProfiles/Console/Demo020.Console.csproj",
+          "role": "Console",
+          "assemblyName": "Connection.Console"
+        },
+        {
+          "path": "demos/Demo020_ConnectionProfiles/Backend/Demo020.Backend.csproj",
+          "role": "Backend",
+          "assemblyName": "Connection.Backend"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.DemoConnection/Maf.DemoConnection.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo030",
+      "title": "Agent Capabilities",
+      "objective": "Qualify the actual provider capabilities before depending on them.",
+      "initialOrder": 3,
+      "courseStep": "P01",
+      "prerequisites": [
+        "Demo020"
+      ],
+      "folder": "demos/Demo030_AgentCapabilities",
+      "origins": [
+        "src/pilot/AgentCapabilities"
+      ],
+      "guide": "docs/lot-004/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Test-AgentCapabilities.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo030_AgentCapabilities/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo030_AgentCapabilities/Demo030.App.csproj",
+          "role": "App",
+          "assemblyName": "AgentCapabilities"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.DemoConnection/Maf.DemoConnection.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo040",
+      "title": "First Agent",
+      "objective": "Send unstructured intake text to a native MAF agent.",
+      "initialOrder": 4,
+      "courseStep": "P01",
+      "prerequisites": [
+        "Demo030"
+      ],
+      "folder": "demos/Demo040_FirstAgent",
+      "origins": [
+        "src/course/J1/src/Lab01_IntakeText"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo040_FirstAgent/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo040_FirstAgent/Demo040.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab01_IntakeText"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Assets/components.json",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo050",
+      "title": "Structured Business Contract",
+      "objective": "Validate a typed business draft and request missing information.",
+      "initialOrder": 5,
+      "courseStep": "P02",
+      "prerequisites": [
+        "Demo040"
+      ],
+      "folder": "demos/Demo050_StructuredBusinessContract",
+      "origins": [
+        "src/course/J1/src/Lab02_StructuredDraft"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo050_StructuredBusinessContract/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo050_StructuredBusinessContract/Demo050.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab02_StructuredDraft"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Assets/components.json",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo060",
+      "title": "Tools Catalog",
+      "objective": "Resolve real catalog items through host-controlled tools.",
+      "initialOrder": 6,
+      "courseStep": "P03",
+      "prerequisites": [
+        "Demo050"
+      ],
+      "folder": "demos/Demo060_ToolsCatalog",
+      "origins": [
+        "src/course/J1/src/Lab03_ToolsCatalog"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo060_ToolsCatalog/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo060_ToolsCatalog/Demo060.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab03_ToolsCatalog"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Assets/components.json",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo070",
+      "title": "SQLite Backlog",
+      "objective": "Inspect and persist a validated business item in SQLite.",
+      "initialOrder": 7,
+      "courseStep": "P04",
+      "prerequisites": [
+        "Demo060"
+      ],
+      "folder": "demos/Demo070_SqliteBacklog",
+      "origins": [
+        "src/course/J1/src/Lab04_SqliteBacklog"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo070_SqliteBacklog/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo070_SqliteBacklog/Demo070.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab04_SqliteBacklog"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Assets/components.json",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo080",
+      "title": "Approved Backlog",
+      "objective": "Compare explicit in-process approval and refusal before a SQLite write.",
+      "initialOrder": 8,
+      "courseStep": "P04",
+      "prerequisites": [
+        "Demo070"
+      ],
+      "folder": "demos/Demo080_ApprovedBacklog",
+      "origins": [
+        "src/course/J1/src/Lab04_SqliteBacklog_Extended"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo080_ApprovedBacklog/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo080_ApprovedBacklog/Demo080.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab04_SqliteBacklog_Extended"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Assets/components.json",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo090",
+      "title": "Complete Pipeline",
+      "objective": "Connect intake, validation, tools and approved action.",
+      "initialOrder": 9,
+      "courseStep": "P04",
+      "prerequisites": [
+        "Demo080"
+      ],
+      "folder": "demos/Demo090_CompletePipeline",
+      "origins": [
+        "src/course/J1/src/Lab05_PipelineComplete"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo090_CompletePipeline/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo090_CompletePipeline/Demo090.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab05_PipelineComplete"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Assets/components.json",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo100",
+      "title": "Controlled Action",
+      "objective": "Compare prompt-only instructions with enforced host validation.",
+      "initialOrder": 10,
+      "courseStep": "P04",
+      "prerequisites": [
+        "Demo050",
+        "Demo060"
+      ],
+      "folder": "demos/Demo100_ControlledAction",
+      "origins": [
+        "src/jeudis/PromptOnlyVsControlledAgent"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo100_ControlledAction/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo100_ControlledAction/Demo100.App.csproj",
+          "role": "App",
+          "assemblyName": "PromptOnlyVsControlledAgent"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo110",
+      "title": "Tool Reliability",
+      "objective": "Compare ambiguous and precise tool descriptions against observed invocation payloads.",
+      "initialOrder": 11,
+      "courseStep": "P04",
+      "prerequisites": [
+        "Demo060"
+      ],
+      "folder": "demos/Demo110_ToolReliability",
+      "origins": [
+        "src/jeudis/MauvaisToolReliabilityDemo"
+      ],
+      "guide": "docs/lot-010/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot010.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo110_ToolReliability/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo110_ToolReliability/Demo110.App.csproj",
+          "role": "App",
+          "assemblyName": "MauvaisToolReliabilityDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo120",
+      "title": "Tool Hallucination",
+      "objective": "Reject invented tool results and inspect actual business effects.",
+      "initialOrder": 12,
+      "courseStep": "P04",
+      "prerequisites": [
+        "Demo060"
+      ],
+      "folder": "demos/Demo120_ToolHallucination",
+      "origins": [
+        "src/jeudis/AgentToolHallucinationDemo"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo120_ToolHallucination/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo120_ToolHallucination/Demo120.App.csproj",
+          "role": "App",
+          "assemblyName": "AgentToolHallucinationDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo130",
+      "title": "Session Persistence",
+      "objective": "Persist business conversation state and reload it across launches.",
+      "initialOrder": 13,
+      "courseStep": "P05",
+      "prerequisites": [
+        "Demo040"
+      ],
+      "folder": "demos/Demo130_SessionPersistence",
+      "origins": [
+        "src/course/J2/src/Lab01_StatePersistence"
+      ],
+      "guide": "docs/lot-006/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot006.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo130_SessionPersistence/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo130_SessionPersistence/Demo130.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab01_StatePersistence"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Memory/Maf.Memory.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo140",
+      "title": "Native Session",
+      "objective": "Compare native serialized agent sessions with explicit conversation state.",
+      "initialOrder": 14,
+      "courseStep": "P05",
+      "prerequisites": [
+        "Demo130"
+      ],
+      "folder": "demos/Demo140_NativeSession",
+      "origins": [
+        "src/course/J2/src/Lab01_StatePersistence_Session"
+      ],
+      "guide": "docs/lot-006/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot006.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo140_NativeSession/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo140_NativeSession/Demo140.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab01_StatePersistence_session"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Memory/Maf.Memory.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo150",
+      "title": "Shared Facts",
+      "objective": "Share controlled facts with provenance and an explicit forgetting lifecycle.",
+      "initialOrder": 15,
+      "courseStep": "P05",
+      "prerequisites": [
+        "Demo130"
+      ],
+      "folder": "demos/Demo150_SharedFacts",
+      "origins": [
+        "src/course/J2/src/Lab06_SharedMemory"
+      ],
+      "guide": "docs/lot-006/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot006.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo150_SharedFacts/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo150_SharedFacts/Demo150.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab06_SharedMemory"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Memory/Maf.Memory.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo160",
+      "title": "Context Memory",
+      "objective": "Inject remembered facts through the native AI context provider.",
+      "initialOrder": 16,
+      "courseStep": "P05",
+      "prerequisites": [
+        "Demo150"
+      ],
+      "folder": "demos/Demo160_ContextMemory",
+      "origins": [
+        "src/course/J2/src/Lab06_SharedMemory_AiContext"
+      ],
+      "guide": "docs/lot-006/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot006.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo160_ContextMemory/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo160_ContextMemory/Demo160.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab06_SharedMemory_AIContext"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Memory/Maf.Memory.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo170",
+      "title": "Memory Drift",
+      "objective": "Observe corrections and prevent stale facts from silently replacing current facts.",
+      "initialOrder": 17,
+      "courseStep": "P05",
+      "prerequisites": [
+        "Demo150"
+      ],
+      "folder": "demos/Demo170_MemoryDrift",
+      "origins": [
+        "src/jeudis/ContextDriftMemoryDemo"
+      ],
+      "guide": "docs/lot-006/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot006.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo170_MemoryDrift/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo170_MemoryDrift/Demo170.App.csproj",
+          "role": "App",
+          "assemblyName": "ContextDriftMemoryDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Memory/Maf.Memory.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo180",
+      "title": "Vector Ingestion",
+      "objective": "Build dense embeddings and a versioned SQLite vector index.",
+      "initialOrder": 18,
+      "courseStep": "P06",
+      "prerequisites": [
+        "Demo050",
+        "Demo060"
+      ],
+      "folder": "demos/Demo180_VectorIngestion",
+      "origins": [
+        "src/course/J2/src/Lab02_SqliteIngest"
+      ],
+      "guide": "docs/lot-007/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot007.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo180_VectorIngestion/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo180_VectorIngestion/Demo180.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab02_SqliteIngest"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Rag/Maf.Rag.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json",
+        "shared/Maf.Rag/corpus.json"
+      ]
+    },
+    {
+      "id": "Demo190",
+      "title": "Retrieved Evidence",
+      "objective": "Retrieve eligible vector matches and validate cited evidence.",
+      "initialOrder": 19,
+      "courseStep": "P06",
+      "prerequisites": [
+        "Demo180"
+      ],
+      "folder": "demos/Demo190_RetrievedEvidence",
+      "origins": [
+        "src/course/J2/src/Lab03_RagAgent"
+      ],
+      "guide": "docs/lot-007/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot007.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo190_RetrievedEvidence/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo190_RetrievedEvidence/Demo190.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab03_RagAgent"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Rag/Maf.Rag.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json",
+        "shared/Maf.Rag/corpus.json"
+      ]
+    },
+    {
+      "id": "Demo200",
+      "title": "Retrieval Provider",
+      "objective": "Compare retrieval through a native context provider.",
+      "initialOrder": 20,
+      "courseStep": "P06",
+      "prerequisites": [
+        "Demo190"
+      ],
+      "folder": "demos/Demo200_RetrievalProvider",
+      "origins": [
+        "src/course/J2/src/Lab03B_RagProvider"
+      ],
+      "guide": "docs/lot-007/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot007.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo200_RetrievalProvider/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo200_RetrievalProvider/Demo200.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab03B_RagProvider"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Rag/Maf.Rag.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json",
+        "shared/Maf.Rag/corpus.json"
+      ]
+    },
+    {
+      "id": "Demo210",
+      "title": "Corpus Quality",
+      "objective": "Compare corpus preparation and actual dense-vector retrieval outcomes.",
+      "initialOrder": 21,
+      "courseStep": "P06",
+      "prerequisites": [
+        "Demo180"
+      ],
+      "folder": "demos/Demo210_CorpusQuality",
+      "origins": [
+        "src/jeudis/RagCorpusDemo"
+      ],
+      "guide": "docs/lot-007/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot007.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo210_CorpusQuality/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo210_CorpusQuality/Demo210.App.csproj",
+          "role": "App",
+          "assemblyName": "RagCorpusDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Rag/Maf.Rag.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json",
+        "shared/Maf.Rag/corpus.json"
+      ]
+    },
+    {
+      "id": "Demo220",
+      "title": "Business Retrieval",
+      "objective": "Apply business eligibility before vector ranking and inspect refusal.",
+      "initialOrder": 22,
+      "courseStep": "P06",
+      "prerequisites": [
+        "Demo190"
+      ],
+      "folder": "demos/Demo220_BusinessRetrieval",
+      "origins": [
+        "src/jeudis/RagMetierDemo"
+      ],
+      "guide": "docs/lot-007/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot007.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo220_BusinessRetrieval/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo220_BusinessRetrieval/Demo220.App.csproj",
+          "role": "App",
+          "assemblyName": "RagMetierDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Rag/Maf.Rag.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json",
+        "shared/Maf.Rag/corpus.json"
+      ]
+    },
+    {
+      "id": "Demo230",
+      "title": "Typed Workflow",
+      "objective": "Route typed messages through a native deterministic MAF graph.",
+      "initialOrder": 23,
+      "courseStep": "P07",
+      "prerequisites": [
+        "Demo050",
+        "Demo060"
+      ],
+      "folder": "demos/Demo230_TypedWorkflow",
+      "origins": [
+        "src/video2/01 Video2.MinimalWorkflow"
+      ],
+      "guide": "docs/lot-008/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot008.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo230_TypedWorkflow/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo230_TypedWorkflow/Demo230.App.csproj",
+          "role": "App",
+          "assemblyName": "Video2.MinimalWorkflow"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Workflows/Maf.Workflows.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo240",
+      "title": "Agent Workflow",
+      "objective": "Insert a native linguistic agent step into the typed graph.",
+      "initialOrder": 24,
+      "courseStep": "P07",
+      "prerequisites": [
+        "Demo230",
+        "Demo040"
+      ],
+      "folder": "demos/Demo240_AgentWorkflow",
+      "origins": [
+        "src/video2/02 Video2.LinguisticStepInWorkflow"
+      ],
+      "guide": "docs/lot-008/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot008.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo240_AgentWorkflow/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo240_AgentWorkflow/Demo240.App.csproj",
+          "role": "App",
+          "assemblyName": "Video2.LinguisticStepInWorkflow"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Workflows/Maf.Workflows.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo250",
+      "title": "Workflow Events",
+      "objective": "Observe native workflow events and distinguish them from business proof.",
+      "initialOrder": 25,
+      "courseStep": "P07",
+      "prerequisites": [
+        "Demo230"
+      ],
+      "folder": "demos/Demo250_WorkflowEvents",
+      "origins": [
+        "src/video2/03 Video2.Observability"
+      ],
+      "guide": "docs/lot-008/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot008.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo250_WorkflowEvents/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo250_WorkflowEvents/Demo250.App.csproj",
+          "role": "App",
+          "assemblyName": "Video2.Observability"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Workflows/Maf.Workflows.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo260",
+      "title": "Multi Agent Roles",
+      "objective": "Compare explicit role orchestration with graph execution.",
+      "initialOrder": 26,
+      "courseStep": "P07",
+      "prerequisites": [
+        "Demo240"
+      ],
+      "folder": "demos/Demo260_MultiAgentRoles",
+      "origins": [
+        "src/course/J2/src/Lab04_MultiAgents"
+      ],
+      "guide": "docs/lot-008/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot008.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo260_MultiAgentRoles/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo260_MultiAgentRoles/Demo260.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab04_MultiAgents"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.DemoConnection/Maf.DemoConnection.csproj"
+      ],
+      "assets": [
+        "shared/Training/TrainingConfig.cs",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo270",
+      "title": "Planning",
+      "objective": "Treat a generated plan as data requiring host execution.",
+      "initialOrder": 27,
+      "courseStep": "P07",
+      "prerequisites": [
+        "Demo260"
+      ],
+      "folder": "demos/Demo270_Planning",
+      "origins": [
+        "src/course/J2/src/Lab05_PlanningPattern"
+      ],
+      "guide": "docs/lot-008/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot008.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo270_Planning/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo270_Planning/Demo270.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab05_PlanningPattern"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.DemoConnection/Maf.DemoConnection.csproj"
+      ],
+      "assets": [
+        "shared/Training/TrainingConfig.cs",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo280",
+      "title": "Validated Planning",
+      "objective": "Reject invalid plans before executing host operations.",
+      "initialOrder": 28,
+      "courseStep": "P07",
+      "prerequisites": [
+        "Demo270"
+      ],
+      "folder": "demos/Demo280_ValidatedPlanning",
+      "origins": [
+        "src/course/J2/src/Lab05_PlanningPattern_Validate"
+      ],
+      "guide": "docs/lot-008/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot008.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo280_ValidatedPlanning/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo280_ValidatedPlanning/Demo280.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab05_PlanningPattern"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.DemoConnection/Maf.DemoConnection.csproj"
+      ],
+      "assets": [
+        "shared/Training/TrainingConfig.cs",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo290",
+      "title": "Formatted Planning",
+      "objective": "Add a structured format contract to validated planning.",
+      "initialOrder": 29,
+      "courseStep": "P07",
+      "prerequisites": [
+        "Demo280"
+      ],
+      "folder": "demos/Demo290_FormattedPlanning",
+      "origins": [
+        "src/course/J2/src/Lab05_PlanningPattern_Validate_Format"
+      ],
+      "guide": "docs/lot-008/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot008.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo290_FormattedPlanning/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo290_FormattedPlanning/Demo290.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab05_PlanningPattern_Validate_Format"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.DemoConnection/Maf.DemoConnection.csproj"
+      ],
+      "assets": [
+        "shared/Training/TrainingConfig.cs",
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo300",
+      "title": "External Request",
+      "objective": "Pause a graph for an explicit external response.",
+      "initialOrder": 30,
+      "courseStep": "P08",
+      "prerequisites": [
+        "Demo230"
+      ],
+      "folder": "demos/Demo300_ExternalRequest",
+      "origins": [
+        "src/video3/01 Video3.ExternalRequestPause"
+      ],
+      "guide": "docs/lot-009/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot009.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo300_ExternalRequest/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo300_ExternalRequest/Demo300.App.csproj",
+          "role": "App",
+          "assemblyName": "Video3.ExternalRequestPause"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Durable/Maf.Durable.csproj"
+      ],
+      "assets": []
+    },
+    {
+      "id": "Demo310",
+      "title": "Checkpoint Resume",
+      "objective": "Reload a checkpoint in another process and resume the pending request.",
+      "initialOrder": 31,
+      "courseStep": "P08",
+      "prerequisites": [
+        "Demo300"
+      ],
+      "folder": "demos/Demo310_CheckpointResume",
+      "origins": [
+        "src/video3/02 Video3.CheckpointResume"
+      ],
+      "guide": "docs/lot-009/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot009.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo310_CheckpointResume/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo310_CheckpointResume/Demo310.App.csproj",
+          "role": "App",
+          "assemblyName": "Video3.CheckpointResume"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Durable/Maf.Durable.csproj"
+      ],
+      "assets": []
+    },
+    {
+      "id": "Demo320",
+      "title": "Durable Approval",
+      "objective": "Approve or refuse an immutable proposal and replay a unique SQLite effect.",
+      "initialOrder": 32,
+      "courseStep": "P08",
+      "prerequisites": [
+        "Demo310"
+      ],
+      "folder": "demos/Demo320_DurableApproval",
+      "origins": [
+        "src/video3/03 Video3.ApprovalLikeRequest"
+      ],
+      "guide": "docs/lot-009/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot009.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo320_DurableApproval/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo320_DurableApproval/Demo320.App.csproj",
+          "role": "App",
+          "assemblyName": "Video3.ApprovalLikeRequest"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Durable/Maf.Durable.csproj"
+      ],
+      "assets": []
+    },
+    {
+      "id": "Demo330",
+      "title": "Bounded Harness",
+      "objective": "Enforce iteration, time and cancellation limits on an actual loop.",
+      "initialOrder": 33,
+      "courseStep": "P09",
+      "prerequisites": [
+        "Demo060",
+        "Demo230"
+      ],
+      "folder": "demos/Demo330_BoundedHarness",
+      "origins": [
+        "src/control/BoundedHarness"
+      ],
+      "guide": "docs/lot-010/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot010.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo330_BoundedHarness/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo330_BoundedHarness/Demo330.App.csproj",
+          "role": "App",
+          "assemblyName": "BoundedHarness"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Control/Maf.Control.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo340",
+      "title": "Loop Control",
+      "objective": "Detect repeated requests and terminate a non-progressing agent loop.",
+      "initialOrder": 34,
+      "courseStep": "P09",
+      "prerequisites": [
+        "Demo330"
+      ],
+      "folder": "demos/Demo340_LoopControl",
+      "origins": [
+        "src/jeudis/DisqueRaye.AgentDemo"
+      ],
+      "guide": "docs/lot-010/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot010.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo340_LoopControl/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo340_LoopControl/Demo340.App.csproj",
+          "role": "App",
+          "assemblyName": "DisqueRaye.AgentDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Control/Maf.Control.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo350",
+      "title": "Graceful Degradation",
+      "objective": "Return an explicit degraded outcome on timeout or dependency failure.",
+      "initialOrder": 35,
+      "courseStep": "P09",
+      "prerequisites": [
+        "Demo330"
+      ],
+      "folder": "demos/Demo350_GracefulDegradation",
+      "origins": [
+        "src/jeudis/Episode011.ModeDegrade"
+      ],
+      "guide": "docs/lot-010/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot010.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo350_GracefulDegradation/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo350_GracefulDegradation/Demo350.App.csproj",
+          "role": "App",
+          "assemblyName": "Episode011.ModeDegrade"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo360",
+      "title": "Prompt Injection",
+      "objective": "Inspect untrusted input and enforce the host trust boundary.",
+      "initialOrder": 36,
+      "courseStep": "P09",
+      "prerequisites": [
+        "Demo060"
+      ],
+      "folder": "demos/Demo360_PromptInjection",
+      "origins": [
+        "src/jeudis/Episode03PromptInjection"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo360_PromptInjection/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo360_PromptInjection/Demo360.App.csproj",
+          "role": "App",
+          "assemblyName": "Episode03PromptInjection"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo370",
+      "title": "Layered Protection",
+      "objective": "Compare layered prompt instructions with independent host controls.",
+      "initialOrder": 37,
+      "courseStep": "P09",
+      "prerequisites": [
+        "Demo360"
+      ],
+      "folder": "demos/Demo370_LayeredProtection",
+      "origins": [
+        "src/jeudis/Episode03PromptInjectionDeuxCouches"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo370_LayeredProtection/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo370_LayeredProtection/Demo370.App.csproj",
+          "role": "App",
+          "assemblyName": "Episode03PromptInjectionDeuxCouches"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo380",
+      "title": "Role Based Tools",
+      "objective": "Filter exposed tools and enforce authorization at execution time.",
+      "initialOrder": 38,
+      "courseStep": "P09",
+      "prerequisites": [
+        "Demo060"
+      ],
+      "folder": "demos/Demo380_RoleBasedTools",
+      "origins": [
+        "src/jeudis/RbacToolFilteringDemo"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "deterministic",
+      "connection": "Scripted transport by default; --live explicitly selects the shared model connection.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification. The default forbidden scenario intentionally exits 2 after host permission denial.",
+      "readme": "demos/Demo380_RoleBasedTools/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo380_RoleBasedTools/Demo380.App.csproj",
+          "role": "App",
+          "assemblyName": "RbacToolFilteringDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Control/Maf.Control.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo390",
+      "title": "Prompt Profiles",
+      "objective": "Select explicit prompt profiles without bypassing business contracts.",
+      "initialOrder": 39,
+      "courseStep": "P09",
+      "prerequisites": [
+        "Demo050"
+      ],
+      "folder": "demos/Demo390_PromptProfiles",
+      "origins": [
+        "src/jeudis/PromptProfilesDemo"
+      ],
+      "guide": "docs/lot-005/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Build.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo390_PromptProfiles/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo390_PromptProfiles/Demo390.App.csproj",
+          "role": "App",
+          "assemblyName": "PromptProfilesDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Memory/Maf.Memory.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo400",
+      "title": "Local MCP",
+      "objective": "Discover and invoke the precompiled local stdio MCP server.",
+      "initialOrder": 40,
+      "courseStep": "P10",
+      "prerequisites": [
+        "Demo060"
+      ],
+      "folder": "demos/Demo400_LocalMcp",
+      "origins": [
+        "src/video4/ServeurMcpLocal",
+        "src/video4/ClientAgentMcp"
+      ],
+      "guide": "docs/lot-011/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot011.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo400_LocalMcp/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo400_LocalMcp/Server/Demo400.Server.csproj",
+          "role": "Server",
+          "assemblyName": "ServeurMcpLocal"
+        },
+        {
+          "path": "demos/Demo400_LocalMcp/Client/Demo400.Client.csproj",
+          "role": "Client",
+          "assemblyName": "ClientAgentMcp"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj",
+        "demos/Demo400_LocalMcp/Server/Demo400.Server.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo410",
+      "title": "Streaming Interfaces",
+      "objective": "Use a shared streaming backend from console, Web and WPF clients with persistent sessions.",
+      "initialOrder": 41,
+      "courseStep": "P11",
+      "prerequisites": [
+        "Demo130",
+        "Demo400"
+      ],
+      "folder": "demos/Demo410_StreamingInterfaces",
+      "origins": [
+        "src/video5/ServeurAgentWpf",
+        "src/video5/Streaming.Client",
+        "src/video5/Streaming.Console",
+        "src/video5/ClientWebAgent",
+        "src/video5/ClientWpf"
+      ],
+      "guide": "docs/lot-012/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot012.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo410_StreamingInterfaces/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo410_StreamingInterfaces/Backend/Demo410.Backend.csproj",
+          "role": "Backend",
+          "assemblyName": "ServeurAgentWpf"
+        },
+        {
+          "path": "demos/Demo410_StreamingInterfaces/Client/Demo410.Client.csproj",
+          "role": "Client",
+          "assemblyName": "Streaming.Client"
+        },
+        {
+          "path": "demos/Demo410_StreamingInterfaces/Console/Demo410.Console.csproj",
+          "role": "Console",
+          "assemblyName": "Streaming.Console"
+        },
+        {
+          "path": "demos/Demo410_StreamingInterfaces/Web/Demo410.Web.csproj",
+          "role": "Web",
+          "assemblyName": "ClientWebAgent"
+        },
+        {
+          "path": "demos/Demo410_StreamingInterfaces/Wpf/Demo410.Wpf.csproj",
+          "role": "Wpf",
+          "assemblyName": "ClientWpf"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.DemoConnection/Maf.DemoConnection.csproj",
+        "shared/Maf.Memory/Maf.Memory.csproj",
+        "demos/Demo400_LocalMcp/Client/Demo400.Client.csproj",
+        "demos/Demo410_StreamingInterfaces/Client/Demo410.Client.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo420",
+      "title": "Safe Telemetry",
+      "objective": "Correlate safe native and HTTP spans and record nullable measured usage.",
+      "initialOrder": 42,
+      "courseStep": "P12",
+      "prerequisites": [
+        "Demo250",
+        "Demo330"
+      ],
+      "folder": "demos/Demo420_SafeTelemetry",
+      "origins": [
+        "src/course/J2/src/Lab07_OpenTelemetry"
+      ],
+      "guide": "docs/lot-013/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot013.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo420_SafeTelemetry/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo420_SafeTelemetry/Demo420.App.csproj",
+          "role": "App",
+          "assemblyName": "Lab07_OpenTelemetry"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Observability/Maf.Observability.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo430",
+      "title": "Business Audit",
+      "objective": "Reopen the separate business journal and distinguish effects from traces.",
+      "initialOrder": 43,
+      "courseStep": "P12",
+      "prerequisites": [
+        "Demo320",
+        "Demo420"
+      ],
+      "folder": "demos/Demo430_BusinessAudit",
+      "origins": [
+        "src/jeudis/AuditTrailAgentique"
+      ],
+      "guide": "docs/lot-013/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot013.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo430_BusinessAudit/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo430_BusinessAudit/Demo430.App.csproj",
+          "role": "App",
+          "assemblyName": "AuditTrailAgentique"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Observability/Maf.Observability.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo440",
+      "title": "Context Budget",
+      "objective": "Measure extraction, summary and compaction overhead separately.",
+      "initialOrder": 44,
+      "courseStep": "P12",
+      "prerequisites": [
+        "Demo150",
+        "Demo420"
+      ],
+      "folder": "demos/Demo440_ContextBudget",
+      "origins": [
+        "src/jeudis/Ep015.TokenDiet.Demo"
+      ],
+      "guide": "docs/lot-013/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot013.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo440_ContextBudget/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo440_ContextBudget/Demo440.App.csproj",
+          "role": "App",
+          "assemblyName": "EP015.Demo.TokensRegime"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Memory/Maf.Memory.csproj",
+        "shared/Maf.Observability/Maf.Observability.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo450",
+      "title": "Contract Regression",
+      "objective": "Run deterministic business contract regressions before model evaluation.",
+      "initialOrder": 45,
+      "courseStep": "P13",
+      "prerequisites": [
+        "Demo050"
+      ],
+      "folder": "demos/Demo450_ContractRegression",
+      "origins": [
+        "src/jeudis/AgentCiCdDemo/src/AgentCiCd.Core"
+      ],
+      "guide": "docs/lot-014/",
+      "executionMode": "real",
+      "connection": "Shared ai-settings.json; Ollama granite4:3b by default, explicit API key profile optional. RAG additionally requires independent embeddinggemma:300m embeddings.",
+      "verification": [
+        "tools/Verify-Lot014.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo450_ContractRegression/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo450_ContractRegression/Demo450.App.csproj",
+          "role": "App",
+          "assemblyName": "AgentCiCd.Core"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo460",
+      "title": "Candidate Evaluation",
+      "objective": "Evaluate isolated candidate answers against versioned references and strict gates.",
+      "initialOrder": 46,
+      "courseStep": "P13",
+      "prerequisites": [
+        "Demo190",
+        "Demo450"
+      ],
+      "folder": "demos/Demo460_CandidateEvaluation",
+      "origins": [
+        "src/jeudis/Episode17Demo"
+      ],
+      "guide": "docs/lot-014/",
+      "executionMode": "fixture",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot014.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo460_CandidateEvaluation/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo460_CandidateEvaluation/Demo460.App.csproj",
+          "role": "App",
+          "assemblyName": "MafPromptJudgeDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Backlog/Maf.Backlog.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo470",
+      "title": "Documented Approval",
+      "objective": "Bind validated RAG evidence to a durable approved proposal and unique business effect.",
+      "initialOrder": 47,
+      "courseStep": "P14",
+      "prerequisites": [
+        "Demo220",
+        "Demo320",
+        "Demo430"
+      ],
+      "folder": "demos/Demo470_DocumentedApproval",
+      "origins": [
+        "src/acceptance/DocumentedApproval"
+      ],
+      "guide": "docs/lot-015/",
+      "executionMode": "fixture",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot015.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo470_DocumentedApproval/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo470_DocumentedApproval/Demo470.App.csproj",
+          "role": "App",
+          "assemblyName": "DocumentedApproval"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Rag/Maf.Rag.csproj",
+        "shared/Maf.Durable/Maf.Durable.csproj",
+        "shared/Maf.Observability/Maf.Observability.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json",
+        "shared/Maf.Rag/corpus.json"
+      ]
+    },
+    {
+      "id": "Demo480",
+      "title": "Model Routing",
+      "objective": "Compare routed requests including triage overhead against a direct baseline.",
+      "initialOrder": 48,
+      "courseStep": "P15",
+      "prerequisites": [
+        "Demo330",
+        "Demo460"
+      ],
+      "folder": "demos/Demo480_ModelRouting",
+      "origins": [
+        "src/jeudis/ModelRouterMafDemo"
+      ],
+      "guide": "docs/lot-013/",
+      "executionMode": "real",
+      "connection": "Ollama only. MAF_ROUTE_TRIAGE, MAF_ROUTE_EASY and MAF_ROUTE_HARD optionally select already installed model names. Identical defaults demonstrate mechanics only; --sensitive escalates without a model call.",
+      "verification": [
+        "tools/Verify-Lot013.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification. Fixed request order, tokenizer differences and unmeasured quality prevent a savings claim.",
+      "readme": "demos/Demo480_ModelRouting/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo480_ModelRouting/Demo480.App.csproj",
+          "role": "App",
+          "assemblyName": "ModelRouterMafDemo"
+        }
+      ],
+      "sharedDependencies": [
+        "shared/Maf.Observability/Maf.Observability.csproj"
+      ],
+      "assets": [
+        "shared/Configuration/ai-settings.json"
+      ]
+    },
+    {
+      "id": "Demo490",
+      "title": "Production Review",
+      "objective": "Review the remaining application-specific deployment decisions.",
+      "initialOrder": 49,
+      "courseStep": "P15",
+      "prerequisites": [
+        "Demo470"
+      ],
+      "folder": "demos/Demo490_ProductionReview",
+      "origins": [
+        "src/jeudis/AgenticPocToProd"
+      ],
+      "guide": "docs/lot-015/",
+      "executionMode": "deterministic",
+      "connection": "No model for the documented default command. Optional live modes require the shared connection profile.",
+      "verification": [
+        "tools/Verify-Lot015.ps1"
+      ],
+      "limits": "Teaching scenario only. Existing host controls and persistence formats are preserved. Default granite4:3b evaluation remains unqualified; no production or independent human-domain qualification.",
+      "readme": "demos/Demo490_ProductionReview/README.md",
+      "projects": [
+        {
+          "path": "demos/Demo490_ProductionReview/Demo490.App.csproj",
+          "role": "App",
+          "assemblyName": "AgenticPocToProd"
+        }
+      ],
+      "sharedDependencies": [],
+      "assets": []
+    }
+  ]
+}

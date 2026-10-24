@@ -1,0 +1,581 @@
+DOSSIER CLIENT - ALPHA NORD
+
+Ticket principal : INC-2026-0417
+Client : Alpha Nord
+Contrat : support prioritaire avec SLA renforcé pour les incidents bloquants en production.
+Situation : depuis la mise à jour du module de facturation, plusieurs factures validées restent en état "à traiter" et ne sont pas envoyées au système comptable.
+Impact : l'équipe financière ne peut pas clôturer la journée. Le blocage concerne la production.
+Urgence déclarée : haute.
+Risque : retard de facturation, escalade direction financière, rupture de SLA.
+Demande du client : obtenir une décision claire sur la priorité du ticket, l'action support à lancer et l'opportunité d'un geste commercial.
+Contrainte importante : ne pas proposer de migration majeure dans l'immédiat, car le client est en période de clôture.
+Historique récent : un incident mineur de synchronisation avait été observé deux semaines plus tôt, sans impact production.
+Note support : les logs mentionnent une file de messages saturée entre le module de facturation et le connecteur comptable.
+Action déjà tentée : redémarrage du service de synchronisation, sans effet durable.
+Point métier : les factures ne sont pas perdues ; elles restent en attente dans le système source.
+Décision attendue : prioriser le ticket en incident production bloquant et ouvrir une cellule courte avec support, produit et exploitation.
+
+ANNEXE A - INFORMATIONS COMMERCIALES GÉNÉRALES
+Le client Alpha Nord utilise plusieurs modules de la plateforme depuis 2022.
+L'équipe commerciale souhaite renouveler le contrat au prochain trimestre.
+La documentation marketing mentionne une satisfaction globale élevée.
+Ces informations peuvent être utiles au contexte relationnel, mais ne déterminent pas la résolution technique immédiate.
+
+ANNEXE B - NOTES DE RÉUNION NON CRITIQUES
+Réunion du lundi : discussion sur les tableaux de bord.
+Réunion du mardi : échange sur l'ergonomie du portail.
+Réunion du mercredi : demande d'amélioration de filtres dans l'écran de recherche.
+Aucune de ces demandes ne concerne directement l'incident de facturation en production.
+
+ANNEXE C - DEMANDES SECONDAIRES
+Demande secondaire 1 : changer le libellé d'un bouton dans l'espace client.
+Demande secondaire 2 : ajouter une colonne exportable dans un rapport mensuel.
+Demande secondaire 3 : clarifier une règle de tri dans une grille.
+Ces éléments ne doivent pas être mélangés avec l'incident bloquant.
+
+ANNEXE D - EXTRAITS TECHNIQUES DISPERSÉS
+Log 08:42 : queue billing.outbound depth=1482.
+Log 08:44 : accounting connector timeout after 30s.
+Log 08:45 : retry policy exhausted for batch BIL-7742.
+Log 08:47 : messages remain durable, no data loss detected.
+Log 08:52 : production operators confirm business blockage.
+
+NOTE PARASITE 001
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 002
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 003
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 004
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 005
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 006
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 007
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 008
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 009
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 010
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 011
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 012
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 013
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 014
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 015
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 016
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 017
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 018
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 019
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 020
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 021
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 022
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 023
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 024
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 025
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 026
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 027
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 028
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 029
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 030
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 031
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 032
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 033
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 034
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 035
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 036
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 037
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 038
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 039
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 040
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 041
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 042
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 043
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 044
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 045
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 046
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 047
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 048
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 049
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 050
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 051
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 052
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 053
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 054
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 055
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 056
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 057
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 058
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 059
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 060
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 061
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 062
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 063
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 064
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 065
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 066
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 067
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 068
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 069
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 070
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 071
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 072
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 073
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 074
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 075
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 076
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 077
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 078
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 079
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 080
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 081
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 082
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 083
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 084
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 085
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 086
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 087
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 088
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 089
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.
+
+NOTE PARASITE 090
+Cette note simule le bruit documentaire que l'on trouve souvent dans un vrai dossier client.
+Elle parle de préférences d'interface, de remarques anciennes, de demandes sans urgence et de détails périphériques.
+Elle ne modifie pas la décision à prendre sur le ticket de facturation en production.
+Elle augmente pourtant le volume envoyé au modèle si l'application transmet tout sans filtrage.

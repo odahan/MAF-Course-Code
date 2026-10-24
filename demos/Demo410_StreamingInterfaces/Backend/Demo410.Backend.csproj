@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>ServeurAgentWpf</AssemblyName>
+    <RootNamespace>ServeurAgentWpf</RootNamespace><TargetFramework>net10.0</TargetFramework></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../shared/Maf.DemoConnection/Maf.DemoConnection.csproj" />
+    <ProjectReference Include="../../../shared/Maf.Memory/Maf.Memory.csproj" />
+    <ProjectReference Include="../../Demo400_LocalMcp/Client/Demo400.Client.csproj" />
+    <ProjectReference Include="../Client/Demo410.Client.csproj" />
+    <None Include="../../../shared/Configuration/ai-settings.json" Link="ai-settings.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
+

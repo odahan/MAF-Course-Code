@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Video3.ExternalRequestPause</AssemblyName>
+    <RootNamespace>Video3.ExternalRequestPause</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Maf.Durable/Maf.Durable.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+{
+  "components": [
+    { "name": "UI", "owner": "Team Front" },
+    { "name": "API", "owner": "Team Backend" },
+    { "name": "Auth", "owner": "Team Security" },
+    { "name": "Billing", "owner": "Team Payments" },
+    { "name": "Reporting", "owner": "Team Data" },
+    { "name": "Storage", "owner": "Team Platform" }
+  ]
+}

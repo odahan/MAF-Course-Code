@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PromptProfilesDemo</AssemblyName>
+    <RootNamespace>PromptProfilesDemo</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../shared/Maf.Memory/Maf.Memory.csproj" />
+    <None Include="../../shared/Configuration/ai-settings.json" Link="ai-settings.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Donnees/**/*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

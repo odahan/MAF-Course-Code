@@ -1,0 +1,72 @@
+AVIS LEGAL – LICENCE D’UTILISATION
+
+Les supports de formation, documents, exemples de code source, fichiers annexes, démonstrations, extraits, scripts, visuels et le PDF des slides remis dans le cadre de la formation Microsoft Agent Framework (ci-après les « Supports ») sont protégés par le droit d’auteur et, le cas échéant, par toute autre règle applicable en matière de propriété intellectuelle.
+
+1. TITULAIRE DES DROITS
+L’ensemble des droits de propriété intellectuelle afférents aux Supports appartient exclusivement à Olivier Dahan.
+Contact pour toute demande d’autorisation, de licence ou d’usage particulier : odahan@e-naxos.com
+
+Aucune cession de droits n’est consentie au participant. La remise des Supports n’emporte qu’une autorisation d’usage strictement limitée, personnelle et révocable, dans les conditions ci-dessous.
+
+2. BENEFICIAIRES AUTORISES
+L’autorisation d’usage est accordée exclusivement :
+- aux participants effectivement présents pendant la formation ;
+- à titre strictement personnel, nominatif, non exclusif, non cessible, non transférable et non sous-licenciable.
+
+Toute personne non présente à la formation est expressément exclue de tout droit d’accès, de consultation, d’utilisation, de copie ou d’exploitation des Supports, même à titre gratuit, interne ou prétendument pédagogique.
+
+3. USAGE AUTORISE
+Les Supports peuvent être utilisés uniquement :
+- pendant la formation ;
+- après la formation, par les seuls participants présents, exclusivement pour leur consultation personnelle, leur révision et leur usage interne propre.
+
+Aucun autre usage n’est autorisé.
+
+4. INTERDICTIONS ABSOLUES
+Il est strictement interdit, sans autorisation écrite, préalable et expresse d’Olivier Dahan, de :
+- copier, reproduire, dupliquer, scanner ou archiver les Supports, en tout ou partie, par quelque moyen que ce soit ;
+- transmettre, partager, prêter, céder, revendre, redistribuer ou mettre à disposition les Supports à un tiers ;
+- diffuser les Supports sur tout support ou réseau, notamment e-mail, messagerie, intranet, extranet, cloud, dépôt Git, plateforme collaborative, LMS, forum, réseau social, site web, blog, chaîne vidéo ou stockage partagé ;
+- publier, représenter, projeter, enregistrer, capturer, filmer ou rediffuser les Supports, en tout ou partie ;
+- réutiliser les Supports pour animer, préparer, enrichir ou commercialiser une autre formation, prestation, conférence, article, livre, tutoriel, démonstration ou contenu pédagogique ;
+- modifier, adapter, traduire, extraire, intégrer, reconditionner ou réexploiter les Supports, en tout ou partie, sous quelque forme que ce soit ;
+- retirer, masquer ou altérer les mentions de propriété, d’origine ou de protection figurant sur les Supports.
+
+5. CODE SOURCE ET EXEMPLES
+Les exemples de code remis dans le cadre de la formation suivent la même règle restrictive que les autres Supports.
+Ils ne peuvent être utilisés que par les participants présents, dans le seul cadre de la formation et, après celle-ci, pour leur consultation personnelle et leur expérimentation interne propre.
+
+Sont notamment interdits :
+- toute republication, même partielle, dans un dépôt public ou privé accessible à des tiers ;
+- toute réutilisation dans une autre formation, documentation, vidéo, démonstration publique ou support client ;
+- toute transmission à un collègue, à un prestataire, à une société tierce ou à une communauté, même sans contrepartie financière.
+
+6. ABSENCE DE DROIT DE DIFFUSION COLLECTIVE
+L’entreprise, l’administration, l’école, l’organisme ou toute entité finançant la formation n’acquiert aucun droit collectif d’usage ou de redistribution sur les Supports, sauf autorisation écrite contraire d’Olivier Dahan.
+La participation ou le financement d’une inscription ne vaut ni licence d’équipe, ni licence de service, ni licence entreprise.
+
+7. SANCTIONS
+Toute reproduction, représentation, diffusion, mise à disposition ou exploitation non autorisée des Supports constitue une atteinte aux droits d’Olivier Dahan et pourra donner lieu à toute action utile.
+
+De tels agissements sont susceptibles de caractériser notamment :
+- une reproduction illicite ;
+- une représentation illicite ;
+- une violation des droits d’auteur et des droits patrimoniaux ;
+- un acte de contrefaçon ;
+- et, selon les circonstances, des actes de concurrence déloyale et/ou de parasitisme.
+
+Le contrevenant s’expose à des poursuites civiles et pénales, ainsi qu’à toute demande d’indemnisation du préjudice subi.
+
+8. BASE JURIDIQUE DE PRINCIPE
+Conformément aux règles applicables en matière de propriété intellectuelle, toute reproduction ou représentation, intégrale ou partielle, sans autorisation du titulaire des droits, est illicite. En droit français, de tels actes sont notamment susceptibles de relever des dispositions du Code de la propriété intellectuelle relatives au droit d’auteur et à la contrefaçon.
+
+9. ACCEPTATION
+La réception, l’ouverture, le téléchargement, la conservation ou l’utilisation des Supports implique l’acceptation pleine et entière de la présente licence d’utilisation ultra stricte.
+
+En cas de désaccord, le destinataire doit supprimer immédiatement l’ensemble des fichiers remis et s’abstenir de toute utilisation.
+
+10. DEMANDE D’AUTORISATION
+Toute demande d’usage dépassant strictement le cadre ci-dessus doit faire l’objet d’un accord écrit, préalable et exprès d’Olivier Dahan.
+Contact : odahan@e-naxos.com
+
+© Olivier Dahan – Tous droits réservés.

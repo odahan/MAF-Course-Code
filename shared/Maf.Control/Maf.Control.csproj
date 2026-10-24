@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Agents.AI.Harness" />
+    <ProjectReference Include="../Maf.DemoConnection/Maf.DemoConnection.csproj" />
+    <ProjectReference Include="../Maf.Backlog/Maf.Backlog.csproj" />
+  </ItemGroup>
+</Project>
