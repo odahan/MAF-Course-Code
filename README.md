@@ -1,5 +1,8 @@
 # Microsoft Agent Framework teaching demos
 
+> Le code est documenté en anglais mais le cours sera disponible gratuitement en français aussi
+> The code is documented in English, but the course will also be available for free in French
+
 Version **V100** is the first published technical base. See the [release notes](docs/ReleaseNotes.md) for its scope, validation and limits. The [GitHub repository](https://github.com/odahan/MAF-Course-Code) contains this source tree at its root.
 
 ## Complete course
